@@ -12,8 +12,6 @@ export default {
   methods: {
     handleTest() {
       this.msg = this.$store.state.id
-    },
-    aa() {},
-    aaaa() {}
+    }
   }
 }
