@@ -3,6 +3,7 @@
     <keep-alive>
       <router-view />
       123
+      456
     </keep-alive>
   </div>
 </template>
