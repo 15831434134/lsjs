@@ -46,6 +46,17 @@
     },
     "rules": {}
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "eslint",
+      "git add"    ]
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
