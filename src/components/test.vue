@@ -3,7 +3,7 @@
     123213123 {{ $props }} {{ $attrs }}
     <input v-bind="$props" />
     <Son v-bind="$attrs" v-on="$listeners" a />
-  </div>
+  </div> 
 </template>
 <script>
 import Son from './son.vue'

@@ -12,6 +12,9 @@ export default new Vuex.Store({
   modules: {
     [NAME_SPACE_A]: modulesA,
     [NAME_SPACE_B]: modulesB
+
+
+    
   },
   ...rootState,
   plugins: [persistedState]

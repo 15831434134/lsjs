@@ -5,6 +5,10 @@ export const Mixins = {
     }
   },
 
+
+
+  
+
   created() {
     console.log(this.message)
   }
