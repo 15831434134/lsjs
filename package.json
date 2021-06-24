@@ -52,7 +52,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,vue,less}": [
+    "src/**/*.{js,vue}": [
       "prettier --write",
       "eslint --fix",
       "git add"
