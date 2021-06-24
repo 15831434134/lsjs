@@ -2,7 +2,7 @@
   <div>
     123213123 {{ $props }} {{ $attrs }}
     <input v-bind="$props" />
-    <Son v-bind="$attrs" v-on="$listeners" />
+    <Son v-bind="$attrs" v-on="$listeners" a />
   </div>
 </template>
 <script>
