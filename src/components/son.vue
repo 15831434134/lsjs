@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  inheritAttrs: false,
   created() {
     console.log(this.$listeners)
     this.$emit('tempFn')
