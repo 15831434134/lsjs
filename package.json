@@ -46,8 +46,13 @@
     },
     "rules": {}
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"    
+    }
+  },
   "lint-staged": {
-    "**/*": "prettier --write src"
+    "**/*.js": ["prettier --write src","git add"]
   },
   "browserslist": [
     "> 1%",
