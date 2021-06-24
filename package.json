@@ -9,9 +9,6 @@
     "lint": "vue-cli-service lint",
     "format": "prettier --write src"
   },
-  "lint-staged": {
-    "**/*": "prettier --write src"
-  },
   "dependencies": {
     "ant-design-vue": "^1.7.5",
     "babel-plugin-import": "^1.13.3",
@@ -48,6 +45,9 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "lint-staged": {
+    "**/*": "prettier --write src"
   },
   "browserslist": [
     "> 1%",
