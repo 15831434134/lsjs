@@ -2,6 +2,7 @@
   <div id="app">
     <keep-alive>
       <router-view />
+      123
     </keep-alive>
   </div>
 </template>
