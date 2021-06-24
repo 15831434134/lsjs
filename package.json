@@ -32,6 +32,12 @@
     "lint-staged": "^11.0.0",
     "vue-template-compiler": "^2.6.11"
   },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*.js": [
       "prettier --write",
