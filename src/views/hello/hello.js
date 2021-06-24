@@ -1,7 +1,7 @@
 import Hello from './hello.vue'
 import { mapMutations, mapState, mapGetters, mapActions } from 'vuex'
-import { CHANGE_ID, ADD_ID, ADD_TODOS } from '../../store/mutation-types'
-import { NAME_SPACE_A } from '../../store/modules'
+import { CHANGE_ID, ADD_ID, ADD_TODOS } from '@/store/mutation-types'
+import { NAME_SPACE_A } from '@/store/modules'
 export default {
   ...Hello,
   data() {

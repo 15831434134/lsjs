@@ -1,6 +1,7 @@
+import store from '@/store'
 const RouterGuard = (router) => {
   router.beforeEach((to, from, next) => {
-    // console.log(to)
+    console.log(store)
     next()
   })
 }

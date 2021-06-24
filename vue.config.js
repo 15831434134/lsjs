@@ -5,5 +5,8 @@ module.exports = {
                 javascriptEnabled: true
             }
         }
-    }
+    },
+    // chainWebpack: (config) => {
+    //     config.resolve.alias.set('@', resolve('src'))
+    // },
 }
