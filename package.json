@@ -54,7 +54,9 @@
   "lint-staged": {
     "src/**/*.{js,vue}": [
       "prettier --write",
-      "eslint --fix"    ]
+      "eslint --fix",
+      "git push"    
+    ]
   },
   "browserslist": [
     "> 1%",
