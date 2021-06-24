@@ -4,9 +4,6 @@ const RouterGuard = (router) => {
     console.log(store)
     next()
   })
-
-
-  
 }
 
 const scrollBehavior = (to, from, savedPosition) => {
