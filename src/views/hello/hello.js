@@ -23,5 +23,8 @@ export default {
     },
     ...mapMutations(NAME_SPACE_A, [CHANGE_ID, ADD_ID, ADD_TODOS]),
     ...mapActions(NAME_SPACE_A, ['dealy', 'dealyB'])
+
+
+    
   }
 }
