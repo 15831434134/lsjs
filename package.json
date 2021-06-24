@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn format & vue-cli-service build",
-    "lint": "eslint --fix --ext .js & vue-cli-service lint",
+    "lint": "vue-cli-service lint",
     "format": "prettier --write src"
   },
   "dependencies": {
@@ -32,17 +32,17 @@
     "lint-staged": "^11.0.0",
     "vue-template-compiler": "^2.6.11"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "**/*.js": [
+    "src/**/*.{js,vue}": [
       "prettier --write",
-      "eslint",
-      "git add"    ]
+      "eslint --fix",
+      "git add"    
+    ]
   },
   "browserslist": [
     "> 1%",
