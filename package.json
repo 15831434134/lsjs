@@ -10,7 +10,7 @@
     "format": "prettier --write src"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write src"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.5",
