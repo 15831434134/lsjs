@@ -52,7 +52,7 @@
     }
   },
   "lint-staged": {
-    "**/*.js": ["prettier --write src","git add"]
+    "**/*.js": ["prettier --write","git add"]
   },
   "browserslist": [
     "> 1%",
