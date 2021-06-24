@@ -9,6 +9,7 @@ export default {
       msg: 'click'
     }
   },
+
   created() {},
   computed: {
     ...mapState(NAME_SPACE_A, ['id', 'todos']),
