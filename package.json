@@ -1,6 +1,7 @@
 {
   "name": "demo-01",
   "version": "0.1.0",
+  "author": "liushuang@shihuituan.com",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -20,7 +21,8 @@
     "prettier": "^2.3.1",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.0.0-beta.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

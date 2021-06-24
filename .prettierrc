@@ -10,7 +10,7 @@
   "jsxSingleQuote": false,
   "trailingComma": "none",
   "bracketSpacing": true,
-  "jsxBracketSameLin": false,
+  "jsxBracketSameLine": false,
   "arrowParens": "always",
   "rangeStart": 0,
   "requirePragma": false,
