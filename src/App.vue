@@ -4,6 +4,7 @@
       <router-view />
       123
       456
+      789
     </keep-alive>
   </div>
 </template>
