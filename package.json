@@ -28,9 +28,23 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "husky": "4.3.8",
+    "husky": "^4.3.8",
     "lint-staged": "^11.0.0",
     "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
   },
   "husky": {
     "hooks": {
@@ -38,11 +52,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [
+    "**/*.js": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
-    ]
+      "git add"    ]
   },
   "browserslist": [
     "> 1%",
