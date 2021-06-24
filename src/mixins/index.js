@@ -2,6 +2,8 @@ export const Mixins = {
   data() {
     return {
       message: 123
+
+      
     }
   },
 
