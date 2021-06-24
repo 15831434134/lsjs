@@ -6,8 +6,6 @@
     {{ $route.meta.title }}
     <!-- <router-link :to="{path:'user'}">user</router-link>
     <router-view /> -->
-
-    
   </div>
 </template>
 
