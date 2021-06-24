@@ -2,10 +2,6 @@
   <div id="app">
     <keep-alive>
       <router-view />
-      123
-      456
-      789
-      000
     </keep-alive>
   </div>
 </template>
