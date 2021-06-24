@@ -19,6 +19,7 @@ export const modulesA = {
         return doneTodos(status).length
       }
   },
+
   mutations: {
     [CHANGE_ID](state, value) {
       state.id = value
