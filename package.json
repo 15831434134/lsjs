@@ -47,7 +47,7 @@
     "rules": {}
   },
   "husky": {
-    "gitHooks": {
+    "hooks": {
       "pre-commit": "lint-staged"    
     }
   },
