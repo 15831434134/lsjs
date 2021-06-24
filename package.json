@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn format & vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --fix --ext .js & vue-cli-service lint",
     "format": "prettier --write src"
   },
   "dependencies": {
@@ -53,7 +53,7 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "prettier --trailing-comma es5 --single-quote --write",
+      "prettier --write",
       "eslint",
       "git add"    ]
   },
