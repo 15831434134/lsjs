@@ -48,11 +48,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"    
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": ["prettier --write","git add"]
+    "*.{js}": ["prettier --write", "git add"]
   },
   "browserslist": [
     "> 1%",
