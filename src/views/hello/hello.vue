@@ -9,6 +9,6 @@
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped>
 @import url('./hello.less');
 </style>
