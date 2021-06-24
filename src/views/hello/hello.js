@@ -5,6 +5,7 @@ import { NAME_SPACE_A } from '@/store/modules'
 export default {
   ...Hello,
   data() {
+    
     return {
       msg: 'click'
     }
