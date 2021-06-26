@@ -19,8 +19,6 @@ export const modulesA = {
       (status) => {
         return doneTodos(status).length
       }
-
-      
   },
 
   mutations: {
