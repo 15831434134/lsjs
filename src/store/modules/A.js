@@ -34,9 +34,6 @@ export const modulesA = {
     }
   },
 
-
-
-  
   actions: {
     dealy({ commit }, value) {
       return new Promise((resolve) => {
