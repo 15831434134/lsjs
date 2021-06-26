@@ -55,7 +55,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "yarn precommit",
+      "prettier --write",
       "eslint --fix",
       "vue-cli-service lint",
       "git add ."
