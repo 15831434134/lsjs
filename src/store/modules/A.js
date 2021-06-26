@@ -28,6 +28,7 @@ export const modulesA = {
     [ADD_ID](state) {
       return state.id++
     },
+
     [ADD_TODOS](state, { value }) {
       return state.todos.push({ ...value })
     }
@@ -39,8 +40,6 @@ export const modulesA = {
         resolve(value)
       })
     },
-
-    
 
     dealyB({ dispatch }, value) {
       return new Promise((reslove) => {
