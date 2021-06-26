@@ -55,7 +55,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "pretty-quick --staged"
+      
     ]
   },
   "browserslist": [
