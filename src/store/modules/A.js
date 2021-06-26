@@ -40,6 +40,8 @@ export const modulesA = {
       })
     },
 
+    
+
     dealyB({ dispatch }, value) {
       return new Promise((reslove) => {
         return dispatch('dealy', value).then((value) => {
