@@ -31,6 +31,7 @@ export const modulesB = {
       return state.todos.push({ ...value })
     }
   },
+
   actions: {
     dealy({ commit }, value) {
       return new Promise((resolve) => {
