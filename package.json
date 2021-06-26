@@ -50,12 +50,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      
+      "prettier --write",
+      "eslint --fix",
+      "vue-cli-service lint",
+      "git add"
     ]
   },
   "browserslist": [
