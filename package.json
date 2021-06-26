@@ -55,10 +55,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "prettier --write",
-      "eslint --fix",
-      "vue-cli-service lint",
-      "git add ."
+      "yarn precommit"
     ]
   },
   "browserslist": [
