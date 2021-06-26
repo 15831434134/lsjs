@@ -8,6 +8,9 @@ export const modulesB = {
       { id: 2, text: '...', done: false }
     ]
   },
+
+
+  
   getters: {
     getId: (state) => state.id++,
     doneTodos: (state) => (status) => {
