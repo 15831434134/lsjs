@@ -8,7 +8,8 @@
     "build": "yarn format & vue-cli-service build",
     "lint": "vue-cli-service lint",
     "format": "prettier --write src",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "stylelint": "stylelint --fix"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.5",
@@ -32,6 +33,7 @@
     "husky": "^4.3.8",
     "lint-staged": "^11.0.0",
     "pretty-quick": "^3.1.1",
+    "stylelint": "^13.13.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -55,9 +57,13 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "eslint --fix --ext .js --ext .vue",
+      "eslint --fix",
       "prettier --write",
       "git add"
+    ],
+    "src/**/*.{less}": [
+      "stylelint --fix",
+      "prettier --write"
     ]
   },
   "browserslist": [
