@@ -61,7 +61,7 @@
       "prettier --write",
       "git add"
     ],
-    "src/**/*.{less}": [
+    ".less": [
       "stylelint --fix",
       "prettier --write"
     ]
