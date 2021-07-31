@@ -8,6 +8,7 @@ export const modulesB = {
       { id: 2, text: '...', done: false }
     ]
   },
+
   getters: {
     getId: (state) => state.id++,
     doneTodos: (state) => (status) => {
@@ -30,6 +31,7 @@ export const modulesB = {
       return state.todos.push({ ...value })
     }
   },
+
   actions: {
     dealy({ commit }, value) {
       return new Promise((resolve) => {

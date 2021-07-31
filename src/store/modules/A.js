@@ -8,6 +8,7 @@ export const modulesA = {
       { id: 2, text: '...', done: false }
     ]
   },
+
   getters: {
     getId: (state) => state.id,
     doneTodos: (state) => (status) => {
@@ -27,10 +28,12 @@ export const modulesA = {
     [ADD_ID](state) {
       return state.id++
     },
+
     [ADD_TODOS](state, { value }) {
       return state.todos.push({ ...value })
     }
   },
+
   actions: {
     dealy({ commit }, value) {
       return new Promise((resolve) => {
@@ -38,6 +41,7 @@ export const modulesA = {
         resolve(value)
       })
     },
+
     dealyB({ dispatch }, value) {
       return new Promise((reslove) => {
         return dispatch('dealy', value).then((value) => {
