@@ -2,7 +2,7 @@ import Hello from './hello.vue'
 import { mapMutations, mapState, mapGetters, mapActions } from 'vuex'
 import { CHANGE_ID, ADD_ID, ADD_TODOS } from '@/store/mutation-types'
 import { NAME_SPACE_A } from '@/store/modules'
-
+import _ from 'loadsh'
 export default {
   ...Hello,
   data() {
@@ -11,7 +11,9 @@ export default {
     }
   },
 
-  created() {},
+  created() {
+    console.log(_.chunk(['a', 'b', 'c', 'd'], 2))
+  },
   computed: {
     ...mapState(NAME_SPACE_A, ['id', 'todos']),
     ...mapGetters(NAME_SPACE_A, ['doneTodos', 'doneTodosCount', 'getId'])
